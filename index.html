@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <title>Exercice 4 Partie 4</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h1 class="col-sm-12 text-info text-center"># Exercice 4 Partie 4 #</h1>
+      <h2 class="col-sm-12 text-primary text-center">Créer un formulaire demandant nom, prénom, date de naissance, lieu
+        de naissance, emploi et société. Le nom et le prénom
+        doivent commencer par une majuscule, peuvent être composés et ne pas comporter de chiffre. La date de naissance
+        doit
+        être sous le format jj/mm/aaaa. Au clic sur un bouton, les informations apparaissent dans une modale.</h2>
+      <div class="form-group mb-2">
+        <form>
+          <div class="form-groupe">
+            <label for="LasttName">Nom :</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Nom">
+            <p id="errorlastName"></p>
+
+          </div>
+          <div class="form-group">
+            <label for="firstName">Prénom :</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Prénom">
+            <p id="errorfirstName"></p>
+
+          </div>
+          <div class="form-group">
+            <label for="date">Date de naissance :</label>
+            <input type="text" class="form-control" id="birthDate" placeholder="00/00/00">
+            <p id="errorbirthDate"></p>
+
+          </div>
+          <div class="form-group">
+            <label for="placeOfBirth">Lieu de naissance :</label>
+            <input type="text" class="form-control" id="placeOfBirth" placeholder="Ville">
+            <p id="#errorplaceOfBirth"></p>
+
+          </div>
+          <div class="form-group">
+            <label for="Job">Emploi :</label>
+            <input type="text" class="form-control" id="job" placeholder="Emploi">
+            <p id="#errorJob"></p>
+          </div>
+          <div class="form-group">
+            <label for="company">Société :</label>
+            <input type="text" class="form-control" id="company" placeholder="Nom de Société">
+            <p id="#errorCompany"></p>
+          </div>
+          <div class="form-group">
+            <input type="button" id="btn" value="Valider">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
